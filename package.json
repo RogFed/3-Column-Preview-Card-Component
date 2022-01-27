@@ -19,6 +19,7 @@
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.16.7",
     "@testing-library/react": "^12.1.2",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.0.3",
@@ -51,8 +52,8 @@
   },
   "scripts": {
     "start:dev": "webpack serve --config webpack/webpack.dev.js",
-    "dev:buildImage": "docker build . -t react-app-setup-image",
-    "dev:docker": "docker run -p 3000:3000 -d -v $(pwd)/src:/app/src:ro react-app-setup-image",
+    "dev:buildImage": "docker build . -t 3-column-preview-card-component-image",
+    "dev:docker": "docker run -p 3000:3000 -d --rm -v $(pwd)/src:/app/src:ro 3-column-preview-card-component-image",
     "build": "webpack --config webpack/webpack.prod.js",
     "test:dev": "jest --config=jest.config.json --watch",
     "test": "jest --config=jest.config.json"

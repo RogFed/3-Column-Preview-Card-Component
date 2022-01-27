@@ -1,0 +1,38 @@
+.PreviewCard {
+  padding: 5rem;
+  color: var(--transparent-white);
+
+  & img {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  & h2 {
+    color: var(--very-light-grey);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  & p {
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+
+    @media screen and (min-width: 821px) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  &--orange {
+    background: var(--bright-orange);
+  }
+
+  &--cyan {
+    background: var(--dark-cyan);
+  }
+
+  &--darkCyan {
+    background: var(--very-dark-cyan);
+  }
+}

@@ -1,0 +1,29 @@
+.Button {
+  background: var(--very-light-grey);
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  transition: 0.3s ease;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--orange {
+    color: var(--bright-orange);
+  }
+
+  &--cyan {
+    color: var(--dark-cyan);
+  }
+
+  &--darkCyan {
+    color: var(--very-dark-cyan);
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: var(--very-light-grey);
+    outline: 2px solid var(--very-light-grey);
+  }
+}
