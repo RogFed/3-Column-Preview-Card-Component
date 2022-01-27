@@ -1,5 +1,6 @@
 {
   "moduleNameMapper": {
+    "\\.(scss|sass|css|svg)$": "<rootDir>/src/tests/__mocks__/styles.js",
     "\\.(gif)$": "<rootDir>/src/tests/__mocks__/fileMock.js"
   },
   "testEnvironment": "jsdom"
