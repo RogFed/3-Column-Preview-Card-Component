@@ -1,8 +1,8 @@
-const { merge } = require('webpack-merge');
-const common = require('../webpack.common');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { merge } = require('webpack-merge')
+const common = require('../webpack.common')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = merge(common, {
   output: {
@@ -29,4 +29,4 @@ module.exports = merge(common, {
     // @ts-ignore
     new CleanWebpackPlugin(),
   ],
-});
+})
